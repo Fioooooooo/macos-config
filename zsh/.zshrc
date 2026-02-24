@@ -109,10 +109,6 @@ export PATH="${HOME}/.nvm/versions/node/$(nvm version)/bin:${PATH}"
 # export M2_HOME="${HOME}/Work/Environment/apache-maven-3.6.3"
 # export PATH=$M2_HOME/bin:$PATH
 
-# Setting for pyenv
-export PYENV_ROOT="$HOME/.pyenv"
-export PATH="$PYENV_ROOT/bin:$PATH"
-eval "$(pyenv init --path)"
-
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
+
