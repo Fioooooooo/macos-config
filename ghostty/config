@@ -1,0 +1,40 @@
+# This is the configuration file for Ghostty.
+#
+# This template file has been automatically created at the following
+# path since Ghostty couldn't find any existing config files on your system:
+#
+#   $HOME/Library/Application Support/com.mitchellh.ghostty/config
+#
+# The template does not set any default options, since Ghostty ships
+# with sensible defaults for all options. Users should only need to set
+# options that they want to change from the default.
+#
+# Run `ghostty +show-config --default --docs` to view a list of
+# all available config options and their default values.
+
+# theme = Catppuccin Mocha
+
+# 窗口
+background-opacity = 0.8
+background-blur = true
+window-padding-x = 10
+window-padding-y = 10
+mouse-scroll-multiplier = 2
+
+# 光标
+cursor-style = block
+cursor-style-blink = false
+shell-integration-features = no-cursor
+
+# 字体
+font-family = "MesloLGS NF"
+font-size = 13
+
+# 辅助
+copy-on-select = clipboard
+focus-follows-mouse = true
+auto-update = check
+
+# 自定义shader
+custom-shader = shaders/cursor_sweep.glsl
+
