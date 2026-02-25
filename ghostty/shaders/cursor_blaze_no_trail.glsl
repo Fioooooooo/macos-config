@@ -103,10 +103,19 @@ float determineStartVertexFactor(vec2 a, vec2 b) {
     return 1.0 - max(condition1, condition2);
 }
 
-const vec4 TRAIL_COLOR = vec4(1.0, 0.725, 0.161, 1.0);
-const vec4 TRAIL_COLOR_ACCENT = vec4(1.0, 0., 0., 1.0);
-// const vec4 TRAIL_COLOR = vec4(0.482, 0.886, 1.0, 1.0);
-// const vec4 TRAIL_COLOR_ACCENT = vec4(0.0, 0.424, 1.0, 1.0);
+// --- 主题（取消注释以启用）---
+// A: 冰蓝极光
+const vec4 TRAIL_COLOR = vec4(0.2, 0.8, 1.0, 1.0);
+const vec4 TRAIL_COLOR_ACCENT = vec4(0.0, 0.4, 0.9, 1.0);
+// B: 翡翠绿
+// const vec4 TRAIL_COLOR = vec4(0.2, 0.95, 0.6, 1.0);
+// const vec4 TRAIL_COLOR_ACCENT = vec4(0.0, 0.6, 0.3, 1.0);
+// C: 玫瑰金
+// const vec4 TRAIL_COLOR = vec4(1.0, 0.6, 0.5, 1.0);
+// const vec4 TRAIL_COLOR_ACCENT = vec4(0.9, 0.3, 0.2, 1.0);
+// D: 琥珀火
+// const vec4 TRAIL_COLOR = vec4(1.0, 0.725, 0.161, 1.0);
+// const vec4 TRAIL_COLOR_ACCENT = vec4(1.0, 0.35, 0.0, 1.0);
 const vec4 CURRENT_CURSOR_COLOR = TRAIL_COLOR;
 const vec4 PREVIOUS_CURSOR_COLOR = TRAIL_COLOR;
 const float DURATION = 0.3;

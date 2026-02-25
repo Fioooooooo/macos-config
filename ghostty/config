@@ -34,6 +34,7 @@ font-size = 13
 copy-on-select = clipboard
 focus-follows-mouse = true
 auto-update = check
+confirm-close-surface = false
 
 # 自定义shader
 # custom-shader = shaders/cursor_sweep.glsl

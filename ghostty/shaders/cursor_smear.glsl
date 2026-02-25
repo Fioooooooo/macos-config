@@ -60,13 +60,15 @@ float ease(float x) {
     return pow(1.0 - x, 3.0);
 }
 
-// Use this site to convert from HEX to vec4
-// https://enchanted.games/app/colour-converter/
-// const vec4 TRAIL_COLOR = vec4(1., 1., 0., 1.0); // yellow
-const vec4 TRAIL_COLOR = vec4(0.976, 0.302, 1.0, 1.0); // cursor
-// const vec4 TRAIL_COLOR = vec4(0.914, 0.702, 0.992, 1.0); // light cursor
-// const vec4 TRAIL_COLOR = vec4(0.016, 0.82, 0.976, 1.0); // cyan
-// const vec4 TRAIL_COLOR = vec4(0.216, 0.957, 0.6, 1.0); // green
+// --- 主题（取消注释以启用）---
+// A: 冰蓝极光
+const vec4 TRAIL_COLOR = vec4(0.5, 0.9, 1.0, 1.0);
+// B: 翡翠绿
+// const vec4 TRAIL_COLOR = vec4(0.5, 1.0, 0.7, 1.0);
+// C: 玫瑰金
+// const vec4 TRAIL_COLOR = vec4(1.0, 0.75, 0.65, 1.0);
+// D: 琥珀火
+// const vec4 TRAIL_COLOR = vec4(1.0, 0.65, 0.3, 1.0);
 const float OPACITY = 0.6;
 const float DURATION = 0.10; //IN SECONDS
 
