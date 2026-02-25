@@ -15,8 +15,8 @@
 theme = TokyoNight
 
 # 窗口
-background-opacity = 0.88
-background-blur = true
+background-opacity = 0.8
+background-blur = 50
 window-padding-x = 10
 window-padding-y = 10
 mouse-scroll-multiplier = 2
