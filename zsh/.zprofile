@@ -1,11 +1,11 @@
 # HomeBrew
-export HOMEBREW_PIP_INDEX_URL=https://mirrors.cloud.tencent.com/pypi/simple #ckbrew
-export HOMEBREW_API_DOMAIN=https://mirrors.cloud.tencent.com/homebrew-bottles/api  #ckbrew
-export HOMEBREW_BOTTLE_DOMAIN=https://mirrors.cloud.tencent.com/homebrew-bottles #ckbrew
+export HOMEBREW_PIP_INDEX_URL=https://pypi.tuna.tsinghua.edu.cn/simple
+export HOMEBREW_API_DOMAIN=https://mirrors.tuna.tsinghua.edu.cn/homebrew-bottles/api
+export HOMEBREW_BOTTLE_DOMAIN=https://mirrors.tuna.tsinghua.edu.cn/homebrew-bottles
 if [[ $(uname -m) == "arm64" ]]; then
-  eval $(/opt/homebrew/bin/brew shellenv) #ckbrew
+  eval $(/opt/homebrew/bin/brew shellenv)
 else
-  eval $(/usr/local/Homebrew/bin/brew shellenv) #ckbrew
+  eval $(/usr/local/Homebrew/bin/brew shellenv)
 fi
 
 # Setting for pyenv
