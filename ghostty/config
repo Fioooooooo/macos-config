@@ -28,7 +28,7 @@ cursor-style-blink = false
 shell-integration-features = no-cursor
 
 # 字体
-font-family = "MesloLGS NF"
+font-family = "MesloLGS NF, PingFang SC"
 font-size = 13
 
 # 辅助
