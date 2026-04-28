@@ -12,11 +12,22 @@
 - 配置文件应该链接到哪里
 - 第一次启动后要做什么
 
+## 效果预览
+
+整体窗口效果：
+
+![Ghostty window preview](assets/window-screen.png)
+
 ## 仓库内容
 
 ```text
 .
 ├── README.md
+├── assets/
+│   ├── git-status.png
+│   ├── shaders.gif
+│   ├── theme-change.gif
+│   └── window-screen.png
 ├── ghostty/
 │   ├── config.ghostty
 │   ├── cursor-theme.sh
@@ -172,6 +183,10 @@ ln -sfn "$(pwd)/zsh/.zshrc" ~/.zshrc
 ln -sfn "$(pwd)/zsh/.p10k.zsh" ~/.p10k.zsh
 ```
 
+`Powerlevel10k` 在 Git 仓库中的提示符效果：
+
+![Powerlevel10k git status preview](assets/git-status.png)
+
 ### Ghostty
 
 当前仓库只保留 Ghostty 官方最新命名的 `config.ghostty`。推荐直接把整个 `ghostty/` 目录链接到 `~/.config/ghostty`，这样主配置和 shader 可以一起生效。
@@ -196,6 +211,10 @@ ln -sfn "$(pwd)/ghostty" ~/.config/ghostty
   - `cursor_smear.glsl`：在光标移动时增加一段拖尾 / smear 效果
 - 当前默认 cursor 配色是 `blue`，也就是脚本里的“冰蓝极光”
 
+Shader 效果预览：
+
+![Ghostty shader preview](assets/shaders.gif)
+
 如果你想切换 cursor 配色，仓库里还提供了快捷脚本：
 
 ```bash
@@ -205,6 +224,10 @@ cd ghostty
 ```
 
 可选颜色有 `blue`、`green`、`rose`、`amber`。脚本会同时修改两个 shader 文件里的颜色常量，保证发光层和拖尾层保持同一套配色。切换后，重载 Ghostty 配置或重启 Ghostty 即可生效。
+
+配色切换录屏：
+
+![Ghostty theme change preview](assets/theme-change.gif)
 
 ## 第一次启动后
 
