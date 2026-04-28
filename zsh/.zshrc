@@ -102,8 +102,13 @@ source $ZSH/oh-my-zsh.sh
 # users are encouraged to define aliases within the ZSH_CUSTOM folder.
 # For a full list of active aliases, run `alias`.
 
-# Load nvm default version to PATH
-export PATH="${HOME}/.nvm/versions/node/$(nvm version)/bin:${PATH}"
+# Load nvm default version to PATH when available.
+if command -v nvm >/dev/null 2>&1; then
+  nvm_current_version="$(nvm version 2>/dev/null)"
+  if [[ -n "$nvm_current_version" && "$nvm_current_version" != "N/A" ]]; then
+    export PATH="${HOME}/.nvm/versions/node/${nvm_current_version}/bin:${PATH}"
+  fi
+fi
 
 # Setting PATH for Java
 # export M2_HOME="${HOME}/Work/Environment/apache-maven-3.6.3"
@@ -111,4 +116,3 @@ export PATH="${HOME}/.nvm/versions/node/$(nvm version)/bin:${PATH}"
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
-
